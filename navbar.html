@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+<header>
+    <nav class="q-nav">
+        <div class="q-left">
+            <a href="/" class="q-logo">
+                <img src="{{ url_for('static', filename='arf_logo.png') }}" alt="">
+            </a>
+
+            <ul class="q-links">
+                <li><a href="/services">Services</a><span class="arrow"></span></li>
+                <li><a href="/careers">Careers</a><span class="arrow"></span></li>
+                <li><a href="/products">Products</a><span class="arrow"></span></li>
+                <li><a href="/about">About us</a><span class="arrow"></span></li>
+                <li><a href="/contact">Contact us</a><span class="arrow"></span></li>
+            </ul>
+        </div>
+
+        <div class="q-right">
+            <i class="ri-search-line"></i>
+            <div class="divider"></div>
+
+            <!-- EMPLOYEE LOGIN ICON -->
+            <a href="/employee_login" class="emp-login-icon">
+                <i class="ri-user-line"></i>
+            </a>
+
+            <i class="ri-cube-line"></i>
+        </div>
+    </nav>
+</header>
+</body>
+</html>

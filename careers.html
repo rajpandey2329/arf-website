@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Careers - ARF</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+
+<body>
+{% include 'navbar.html' %}
+
+<section class="careers-section">
+    <h2>Join Our Team</h2>
+    <p class="subtitle">Build your future with ARF — where talent meets innovation.</p>
+
+    <div class="job-list">
+
+        <div class="job-card">
+            <h3>Python Developer</h3>
+            <div class="job-meta">📍 Mumbai  📌 Full Time | Exp: 1–3 Years</div>
+            <button>Apply</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Frontend Developer</h3>
+            <div class="job-meta">📍 Remote  📌 Full Time | Exp: 0–2 Years</div>
+            <button>Apply</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Machine Learning Engineer</h3>
+            <div class="job-meta">📍 Bangalore 📌 Full Time | Exp: 2–5 Years</div>
+            <button>Apply</button>
+        </div>
+
+        <div class="job-card">
+            <h3>Intern — AI/ML</h3>
+            <div class="job-meta">🏠 Work From Home 📌 Internship Duration: 6 Months</div>
+            <button>Apply</button>
+        </div>
+
+    </div>
+</section>
+
+{% include 'footer.html' %}
+</body>
+</html>

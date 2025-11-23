@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - ARF</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+</head>
+
+<body>
+
+{% include 'navbar.html' %}
+
+<!-- HERO (EMPTY NOW) -->
+<section class="about-hero"></section>
+
+<!-- WHO WE ARE -->
+<section class="section">
+    <h2>Who We Are</h2>
+    <p>ARF (Automation & Reporting Framework) is built to simplify complex operations and boost efficiency with automation, dashboards, and AI-driven reporting. We combine innovation with reliability to ensure scalable and user-friendly solutions for businesses.</p>
+</section>
+
+<!-- VALUES -->
+<section class="section">
+    <h2>Our Core Values</h2>
+    
+    <div class="values-container">
+        <div class="value-card">
+            <h3>Innovation</h3>
+            <p>We create smarter and more efficient solutions, always pushing boundaries through technology.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>Reliability</h3>
+            <p>Our solutions are designed to be secure, scalable, and dependable for every organization.</p>
+        </div>
+
+        <div class="value-card">
+            <h3>Excellence</h3>
+            <p>We believe in delivering quality experiences through precision and excellence.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+    <h2>Our Leadership Team</h2>
+
+    <div class="team">
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='team1.png') }}" alt="Founder">
+            <h4>Raj Pandey</h4>
+            <span>Founder & Architect</span>
+        </div>
+
+        <div class="team-card">
+            <img src="{{ url_for('static', filename='team2.png') }}" alt="Co-founder">
+            <h4>Akash Verma</h4>
+            <span>Co-Founder, Engineering</span>
+        </div>
+    </div>
+</section>
+
+{% include 'footer.html' %}
+</body>
+</html>

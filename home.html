@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ARF</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+</head>
+<body>
+
+    {% include 'navbar.html' %}
+
+    <!-- HERO BACKGROUND ANIMATION -->
+    <div class="hero">
+        <canvas id="chipBoard"></canvas>
+        <div class="hero-content">
+            <h1>Automation Reporting Framework</h1>
+            <p>Smart • Fast • Reliable — Your all-in-one automation solution.</p>
+            <button class="btn-primary" onclick="window.location.href='/services'">
+                Explore Services
+            </button>
+        </div>
+    </div>
+
+    <!-- FEATURES -->
+    <section class="features">
+        <div class="feature fade">
+            <i class="ri-cpu-line"></i>
+            <h2>Automation</h2>
+            <p>Automate workflows with unmatched precision.</p>
+        </div>
+        <div class="feature fade">
+            <i class="ri-bar-chart-2-line"></i>
+            <h2>Reporting</h2>
+            <p>Generate real-time analytical reports in seconds.</p>
+        </div>
+        <div class="feature fade">
+            <i class="ri-share-forward-line"></i>
+            <h2>Integration</h2>
+            <p>Connect with any system — seamlessly and securely.</p>
+        </div>
+    </section>
+
+    {% include 'footer.html' %}
+    <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>

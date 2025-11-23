@@ -1,0 +1,116 @@
+/* =========================================================
+   EMPLOYEE LOGIN PAGE – PROFESSIONAL QUALCOMM-STYLE DESIGN
+========================================================= */
+.login-wrapper {
+    width: 100%;
+    padding: 70px 0;
+    background: linear-gradient(125deg, #001a39, #013567, #015c9f);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-card {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 18px;
+    padding: 40px 35px;
+    box-shadow: 0 0 38px rgba(0, 0, 0, 0.25);
+    animation: fadeIn 0.7s ease;
+}
+
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.login-icon {
+    font-size: 60px;
+    color: #015c9f;
+}
+.login-header h2 {
+    font-size: 28px;
+    margin-top: 10px;
+    font-weight: 700;
+    color: #002b55;
+}
+.sub-text {
+    font-size: 15px;
+    opacity: 0.8;
+}
+
+.input-field {
+    margin-bottom: 18px;
+    display: flex;
+    flex-direction: column;
+}
+.input-field label {
+    font-weight: 600;
+    margin-bottom: 6px;
+    font-size: 14px;
+}
+.input-field input {
+    padding: 13px 14px;
+    border-radius: 10px;
+    border: 2px solid #c3d9eb;
+    transition: 0.3s;
+    font-size: 15px;
+}
+.input-field input:focus {
+    border-color: #015c9f;
+    outline: none;
+}
+
+.btn-login {
+    width: 100%;
+    background: #015c9f;
+    color: #fff;
+    padding: 14px 17px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-login:hover {
+    background: #004a84;
+}
+
+.login-warning {
+    text-align: center;
+    font-size: 13px;
+    color: #333;
+    margin-top: 18px;
+}
+
+/* SSO Button */
+.btn-sso {
+    width: 100%;
+    margin-top: 15px;
+    background: #ffffff;
+    border: 2px solid #004a84;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    justify-content: center;
+    gap: 10px;
+    font-weight: 600;
+    color: #003868;
+    transition: 0.3s;
+}
+.btn-sso:hover {
+    background: #f1f7ff;
+    border-color: #015c9f;
+}
+.sso-logo {
+    width: 22px;
+    height: 22px;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(25px);}
+    to {opacity: 1; transform: translateY(0);}
+}

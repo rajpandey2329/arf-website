@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us - ARF</title>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="icon" type="image/png" href="{{ url_for('static', filename='favicon.png') }}">
+
+</head>
+
+<body>
+{% include 'navbar.html' %}
+
+<div class="hero">
+    <h1>Contact Us</h1>
+    <p>Email: support@arf.com</p>
+    <p>Phone: +91 9876543210</p>
+</div>
+
+{% include 'footer.html' %}
+</body>
+</html>

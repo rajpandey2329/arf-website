@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Subscription Center – ARF Design</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='subscription.css') }}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+{% include 'navbar.html' %}
+<header class="sub-header">
+    <h1>Stay Connected with ARF Design</h1>
+    <p>Get the latest semiconductor & chipset innovations directly in your inbox.</p>
+</header>
+
+<section class="subscription-form">
+    <h2>Subscribe for Updates</h2>
+    <p>Select the categories you want to hear about:</p>
+
+    <form id="subscribeForm">
+        <label class="check">
+            <input type="checkbox" name="topics" value="chip_design">
+            <span>Chip & SoC Design Advancements</span>
+        </label>
+
+        <label class="check">
+            <input type="checkbox" name="topics" value="ai_edge">
+            <span>AI / Edge & Connectivity Innovations</span>
+        </label>
+
+        <label class="check">
+            <input type="checkbox" name="topics" value="partners">
+            <span>Partnerships & Collaborations</span>
+        </label>
+
+        <label class="check">
+            <input type="checkbox" name="topics" value="careers">
+            <span>Career Opportunities at ARF Design</span>
+        </label>
+
+        <div class="email-box">
+            <input type="email" id="email" placeholder="Enter your email" required>
+        </div>
+
+        <button type="submit" class="btn-submit"><i class="ri-mail-fill"></i> Subscribe</button>
+        <p class="form-msg"></p>
+    </form>
+</section>
+
+<script src="{{ url_for('static', filename='subscription.js') }}"></script>
+{% include 'footer.html' %}
+</body>
+</html>

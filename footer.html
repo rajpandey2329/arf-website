@@ -1,0 +1,82 @@
+<footer class="footer">
+    <div class="footer-main">
+
+        <!-- Column 1 -->
+        <div class="footer-about">
+            <img src="{{ url_for('static', filename='arf_logo.png') }}" class="footer-logo">
+            <p>
+                ARF Design relentlessly innovates to deliver intelligent computing everywhere,
+                helping the world tackle the most important semiconductor challenges.
+                Our advanced chip R&D and connectivity solutions transform global industries.
+            </p>
+
+            <div class="footer-social">
+                <a href="#"><i class="ri-linkedin-fill"></i></a>
+                <a href="#"><i class="ri-twitter-x-line"></i></a>
+                <a href="#"><i class="ri-youtube-fill"></i></a>
+                <a href="#"><i class="ri-instagram-line"></i></a>
+            </div>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-links">
+            <h4>Quick links</h4>
+            <a href="/products">Products</a>
+            <a href="/services">Services</a>
+            <a href="/partners">Partners</a>
+            <a href="/contact">Contact us</a>
+            <a href="/developer">Developer</a>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-company">
+            <h4>Company info</h4>
+            <a href="/about">About us</a>
+            <a href="/careers">Careers</a>
+            <a href="/investors">Investors</a>
+            <a href="/media">News & Media</a>
+            <a href="/business">Our Businesses</a>
+        </div>
+
+        <!-- Column 4 -->
+        <div class="footer-subscribe">
+            <h4>Stay connected</h4>
+            <p>Get the latest ARF Design & industry updates delivered to your inbox.</p>
+            <button class="subscribe-btn" onclick="location.href='/subscription'">
+                <i class="ri-mail-fill"></i> Subscribe
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <div class="footer-bottom-left">
+            <a href="#">Terms of Use</a>
+            <a href="#">Privacy</a>
+            <a href="#">Cookie Policy</a>
+            <a href="#">Accessibility Statement</a>
+        </div>
+        <div class="footer-bottom-right">
+            Language: English (US)
+        </div>
+    </div>
+
+    <p class="footer-copy">© 2025 ARF Design Pvt. Ltd. All Rights Reserved.</p>
+</footer>
+
+
+<!-- Popup Modal (Footer ke BAHAAR hi rahe) -->
+<div id="subscribeModal" class="modal-overlay">
+    <div class="modal-box">
+        <h2>Subscribe for Updates</h2>
+        <p>Join our mailing list to receive latest news from ARF Design.</p>
+
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit" class="btn-submit">Subscribe</button>
+        </form>
+
+        <button class="modal-close">✕</button>
+    </div>
+</div>
